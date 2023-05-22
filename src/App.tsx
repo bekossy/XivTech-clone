@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Automation from "./pages/Automation";
 import Cloud from "./pages/Cloud";
@@ -20,6 +21,7 @@ function App() {
           <Route path="/devops" element={<DevOps />} />
           <Route path="/cloud" element={<Cloud />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )
