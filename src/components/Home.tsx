@@ -1,6 +1,11 @@
-
+import { useEffect } from "react";
+import aos from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+    useEffect(() => {
+        aos.init({ duration: 1500 });
+    }, []);
     return (
         <div className="welcome">
             <section>

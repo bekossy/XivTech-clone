@@ -1,9 +1,15 @@
+import { useEffect } from 'react';
 import ProcessImg from '../assets/img1.jpg';
 import gridImg1 from '../assets/img2.jpg'
 import gridImg2 from '../assets/img3.jpg'
 import gridImg3 from '../assets/img4.jpg'
+import aos from "aos";
+import "aos/dist/aos.css";
 
 const Process = () => {
+    useEffect(() => {
+        aos.init({ duration: 1500 });
+    }, []);
     return (
         <div className="process">
             <section style={{ maxWidth: "900px" }}>
@@ -19,7 +25,7 @@ const Process = () => {
                         <h3>Design</h3>
                         <h3>Refine</h3>
                     </div>
-                    <div className="alignText">
+                    <div className="alignText" data-aos="fade-up">
                         We Productize services. With Ekisu - our flagship AI automation product, we lead the RPA transformation process to strategize, design, build, launch and support the automation. Following deploy, we follow a feedback based refinement process.
                     </div>
                 </div>
@@ -27,7 +33,7 @@ const Process = () => {
                 <div className="expertise">
                     <p>Our expertise</p>
 
-                    <div className="expertiseText">
+                    <div className="expertiseText" data-aos="fade-up">
                         Our core focus on AI + RPA, Design Thinking and Customer Experience allows us to help drive customer focussed innovation. We automate businesses for growth, continued success and leadership.
                     </div>
 
@@ -38,11 +44,13 @@ const Process = () => {
                             <div className="exGridText">
                                 <h1>Strategy</h1>
 
-                                <p>Digital Transformation</p>
-                                <p>AI + RPA Automation</p>
-                                <p>Operational Model</p>
-                                <p>Product Vision</p>
-                                <p>Product Roadmap</p>
+                                <div data-aos="fade-up">
+                                    <p>Digital Transformation</p>
+                                    <p>AI + RPA Automation</p>
+                                    <p>Operational Model</p>
+                                    <p>Product Vision</p>
+                                    <p>Product Roadmap</p>
+                                </div>
                             </div>
                         </div>
                         <div className="exGrid">
@@ -51,11 +59,14 @@ const Process = () => {
                             <div className="exGridText">
                                 <h1>Design + Production</h1>
 
-                                <p>RPA automation</p>
-                                <p>Machine Learning / AI</p>
-                                <p>Document Data Capture</p>
-                                <p>Bot Deploy and Scale</p>
-                                <p>Web/Mobile App Development</p>
+
+                                <div data-aos="fade-up">
+                                    <p>RPA automation</p>
+                                    <p>Machine Learning / AI</p>
+                                    <p>Document Data Capture</p>
+                                    <p>Bot Deploy and Scale</p>
+                                    <p>Web/Mobile App Development</p>
+                                </div>
                             </div>
                         </div>
                         <div className="exGrid">
@@ -64,11 +75,13 @@ const Process = () => {
                             <div className="exGridText">
                                 <h1>Growth</h1>
 
-                                <p>SaaS Platform</p>
-                                <p>Bot Optimization</p>
-                                <p>AI + RPA Lifecycle Management</p>
-                                <p>A/B Testing</p>
-                                <p>KPI Tracking</p>
+                                <div data-aos="fade-up">
+                                    <p>SaaS Platform</p>
+                                    <p>Bot Optimization</p>
+                                    <p>AI + RPA Lifecycle Management</p>
+                                    <p>A/B Testing</p>
+                                    <p>KPI Tracking</p>
+                                </div>
                             </div>
                         </div>
                     </div>

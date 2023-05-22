@@ -1,5 +1,8 @@
 import rightArrow from '../assets/rightArrow.svg';
 import { Link } from 'react-router-dom';
+import aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 interface Props {
     img: string;
@@ -10,8 +13,11 @@ interface Props {
 }
 
 const CollabItem: React.FC<Props> = ({ img, title, text, link, linkText }) => {
+    useEffect(() => {
+        aos.init({ duration: 1500 });
+    }, []);
     return (
-        <div className="collabItem">
+        <div className="collabItem" data-aos="fade-up">
             <div className="collabTitle">
                 <h1>{title}</h1>
 
