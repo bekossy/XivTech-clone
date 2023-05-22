@@ -2,6 +2,7 @@ import Logo from '../assets/XivTechLogo.svg'
 import Main from "../assets/Logo.svg"
 import search from "../assets/searchIcon.svg"
 import downArrow from '../assets/downArrow.svg'
+import menu from '../assets/menuIcon.svg'
 
 const Navbar = () => {
     return (
@@ -23,6 +24,10 @@ const Navbar = () => {
                     <img src={search} alt="" />
                 </div>
                 <button type='button' className='navBtn'>Let's Talk</button>
+            </div>
+
+            <div className="navMenu">
+                <img src={menu} alt="" />
             </div>
         </nav>
     )

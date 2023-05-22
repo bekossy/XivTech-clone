@@ -51,6 +51,12 @@ section {
   align-items: center;
 }
 
+.navMenu {
+  display: none;
+  width: 40px;
+  cursor: pointer;
+}
+
 .navBtns {
   display: flex;
   align-items: center;
@@ -269,4 +275,127 @@ section {
 .collaborate section > button:hover {
   background-color: #fff;
   color: #000;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer > p {
+  text-align: center;
+}
+
+.footerOpts {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footerLeft {
+  max-width: 300px;
+}
+.footerLeft > p {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.footerImg {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footerImg img:first-of-type {
+  width: 60px;
+}
+.footerImg img {
+  width: 120px;
+}
+
+.footerRight {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footerGrid {
+  text-align: center;
+  max-width: 200px;
+}
+.footerGrid h3 {
+  margin-bottom: 10px;
+}
+.footerGrid p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 770px) {
+  .footerOpts {
+    flex-direction: column;
+  }
+  .footerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerLeft {
+    max-width: none;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .footerImg {
+    justify-content: center;
+  }
+  .align {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .alignText {
+    max-width: none;
+  }
+  .collabItem {
+    flex-direction: column-reverse;
+    margin: 30px 0;
+  }
+  .collabItemImg {
+    width: 100%;
+  }
+  .collab h1 {
+    margin-bottom: 20px;
+  }
+  .collabTitle > p {
+    margin-bottom: 30px;
+  }
+  .navbar {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .navMenu {
+    display: block;
+  }
+  .navOpt {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .exGrid img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .expertiseGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .exGrid img {
+    width: 100%;
+    height: auto;
+  }
+  .expertise {
+    padding: 30px;
+    margin-bottom: 200px;
+  }
 }
