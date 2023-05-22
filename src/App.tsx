@@ -1,6 +1,5 @@
-import Home from "./components/Home"
-import Navbar from "./components/Navbar"
-import Process from "./components/Process"
+import Navbar from "./components/Navbar";
+import Homepage from "./pages/Homepage";
 
 
 function App() {
@@ -9,8 +8,7 @@ function App() {
     <>
       <div className="App">
         <Navbar />
-        <Home />
-        <Process />
+        <Homepage />
       </div>
     </>
   )
