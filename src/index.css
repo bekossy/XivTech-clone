@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navImg {
+  display: flex;
+  align-items: center;
+}
+.navImg img:first-of-type {
+  width: 60px;
+}
+.navImg img {
+  width: 120px;
+}
+
+.navOpt {
+  display: flex;
+  align-items: center;
+}
+
+.navBtns {
+  display: flex;
+  align-items: center;
+}
+.navBtns a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.navBtns a:hover {
+  color: blue;
+}
+.navBtns img {
+  width: 25px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.navBtn {
+  padding: 13px 25px;
+  background-color: #fff;
+  border: 2px solid blue;
+  border-radius: 5px;
+  color: blue;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+.navBtn:hover {
+  background-color: blue;
+  color: #fff;
+}
