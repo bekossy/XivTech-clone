@@ -1,10 +1,8 @@
-import { Link } from 'react-router-dom';
 import collabImg from '../assets/img5.jpg';
 import collabItemImg1 from '../assets/img6.jpg'
 import collabItemImg2 from '../assets/img7.png'
 import collabItemImg3 from '../assets/img8.jpg'
 import collabItemImg4 from '../assets/img9.jpg'
-import rightArrow from '../assets/rightArrow.svg'
 import CollabItem from './CollabItem';
 
 
@@ -49,7 +47,7 @@ const Collaborate = () => {
                     />
                 </div>
 
-                <button>Get in touch</button>
+                <button className='btn'>Get in touch</button>
             </section>
         </div>
 
